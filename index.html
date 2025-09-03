@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <title>QR Code 產生器</title>
+  <title>QR Code</title>
   <style>
     * {
       box-sizing: border-box;
@@ -276,7 +276,7 @@
           註解1. 前4碼「年+月」有國泰、富邦、聯邦<br>
           註解2. 前4碼「月+日」有玉山、台新、台銀
         </div>
-    <h2>QR Code 產生器</h2>
+    <h2>QR Code</h2>
     <form id="barcodeForm">
       <!-- ...原本表單內容... -->
       <label>選擇條碼類型:</label>
@@ -295,7 +295,7 @@
         </span>
       </label>
            <input type="text" id="secondBarcode" maxlength="16" pattern="[A-Za-z0-9]{16}" 
-  title="請輸入 16 位英文或數字" required 
+  title="請輸入" required 
   oninput="this.value=this.value.toUpperCase();clearQRCode()" 
   placeholder="請謹慎確認" style="color: #333;" />
 
@@ -319,9 +319,9 @@
         <option value="300">300</option>
         <option value="365">365</option>
       </select>
-      <button type="button" onclick="generateQRCode()">生成 QR Code</button>
+      <button type="button" onclick="generateQRCode()">QR Code</button>
     </form>
-    <button type="button" id="downloadAllBtn" style="display:none;">全部下載</button>
+    <button type="button" id="downloadAllBtn" style="display:none;">下載</button>
   </div>
   <div class="qrcode-container" id="qrcodeContainer" style="display: none;"></div>
 
@@ -582,3 +582,4 @@ document.getElementById('downloadAllBtn').onclick = async function() {
   </script>
 </body>
 </html>
+
